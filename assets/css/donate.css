@@ -1,0 +1,265 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+nav {
+    background-color: #28a746f0;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+    padding: 0px 80px;
+    font-weight: 0;
+    position: sticky !important;
+    top: 0;
+    z-index: 99;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+
+nav .links a {
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+    font-size: 17;
+    padding: 30px 10px;
+}
+nav .icon i {
+    border-radius: 3px;
+    border: 1px solid #fff;
+    padding: 5px 7px;
+}
+
+nav .links a:hover {
+    background-color: white;
+    color: green;
+
+}
+
+nav .logo h1 {
+    font-size: 25px;
+}
+nav .logo a{
+    text-decoration: none;
+    color: white;
+}
+
+.hero .bg-img {
+    height: 150px;
+    width: 100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; */
+    flex-direction: column;
+    background-image: url(../images/hero-bg.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* position: relative; */
+}
+
+.hero .overlay {
+    height: 150px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.575);
+    /* position: absolute;
+    top: 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.hero .overlay h1 {
+    color: white;
+    font-size: 50px;
+    margin: 0;
+}
+nav .logo a{
+    text-decoration: none;
+    color: white;
+}
+.cards .container {
+    display: flex;
+    margin: 75px;
+}
+
+.cards .container .card {
+    width: 33%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    margin-left: 20px;
+    margin-top: 12px;
+}
+
+.cards .container .card .card-header {
+    text-align: center;
+}
+
+.cards .card .card-body {
+    height: 200px;
+}
+
+.cards .container .card .card-body h3 {
+    text-align: center;
+}
+
+.cards .container .card .card-body li {
+    margin-left: 70px;
+}
+
+.last .header {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 1px 8px;
+    font-size: 20px;
+}
+
+.last .bg-img {
+    background-image: url(../images/offering-427297_1920.jpg);
+    /* height: 800px; */
+    width: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.last .bg-img .overlay {
+    background-color: rgba(0, 0, 0, 0.489);
+    /* height: 800px; */
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 75px;
+
+}
+
+.last .overlay .trust {
+    display: flex;
+    background-color: #28a745;
+    color: white;
+    border-radius: 50px;
+    height: 200px;
+    width: 88%;
+    align-items: center;
+    text-align: center;
+    /* margin: 70px; */
+    transition: 1s;
+}
+.last .overlay .trust:hover{
+   background-color: darkgreen;
+   color: white;
+   transform: (1.1);
+}
+
+.last .overlay .trust .image {
+    width: 40%;
+    /* margin: 70px; */
+}
+
+.last .overlay .trust .text {
+    width: 60%;
+}
+
+.last .overlay .wave {
+    display: flex;
+    background-color: #28a745;
+    color: white;
+    border-radius: 50px;
+    height: 200px;
+    width: 88%;
+    align-items: center;
+    text-align: center;
+    /* padding: 75px; */
+    margin-top: 100px;
+    transition: 1s;
+}
+.last .overlay .wave:hover{
+    background-color: darkgreen;
+    color: white;
+    transform: (1.1);
+}
+
+.last .overlay .wave .image {
+    width: 33%;
+}
+
+.last .overlay .wave .text {
+    width: 33%;
+}
+
+.last .overlay .wave .image2 {
+    width: 33%;
+    height: 200px;
+}
+
+.last .overlay .wave .image2 img {
+    object-fit: cover;
+    /* padding: 20px; */
+    height: 100%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer .container {
+    display: flex;
+    margin: 82px;
+    margin-bottom: 0;
+}
+
+footer .container .left {
+    width: 40%;
+    padding-right: 10px;
+    padding-top: 15px;
+}
+
+footer .container .left h1 {
+    font-size: 30px;
+}
+
+footer .container .left i {
+    font-size: 20px;
+    padding-left: 12px;
+}
+footer .container .left i:hover{
+    color: #28a745;
+    cursor: pointer;
+}
+
+footer .container .mid {
+    width: 30%;
+    padding-top: 15px;
+}
+
+footer .container .mid p:hover {
+    color: #28a745;
+    cursor: pointer;
+}
+
+
+footer .container .right {
+    width: 30%;
+    padding-top: 15px;
+}
+
+footer .container .right p:hover {
+    color: #28a745;
+    cursor: pointer;
+}
+@media(max-width:1084px) {
+    nav .links {
+        display: none;
+    }
+
+    nav .icon {
+        display: block !important;
+    }
+}

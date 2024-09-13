@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+nav {
+    background-color: #28a746f0;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+    padding: 0px 80px;
+    font-weight: 0;
+    position: sticky !important;
+    top: 0;
+    z-index: 99;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+
+nav .links a {
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+    font-size: 17;
+    padding: 30px 10px;
+}
+
+nav .links a:hover {
+    background-color: white;
+    color: green;
+
+}
+
+nav .logo h1 {
+    font-size: 25px;
+}
+nav .logo a{
+    text-decoration: none;
+    color: white;
+}
+
+.hero .bg-img {
+    height: 180px;
+    width: 100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; */
+    flex-direction: column;
+    background-image: url(../images/hero-bg.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* position: relative; */
+}
+
+.hero .overlay {
+    height: 180px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.575);
+    /* position: absolute;
+    top: 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.hero .overlay h1 {
+    color: white;
+    font-size: 50px;
+    margin: 0;
+}
+
+.members .card {
+    width: 33%;
+}
+
+.members .first {
+    display: flex;
+    margin: 75px;
+}
+
+.members .first .card {
+    align-items: center;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    margin: 12px;
+
+}
+
+.members .card .card-header {
+    text-align: center;
+    width: 100%;
+    height: 200px;
+}
+
+.members .card .card-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-size: cover;
+}
+
+.members .card .card-body {
+    height: 220px;
+    text-align: center;
+}
+
+.members .card p {
+    padding: 10px;
+    padding-top: 0;
+    text-align: center;
+}
+
+.members .second {
+    display: flex;
+    margin: 75px;
+}
+
+.members .second .card {
+    align-items: center;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    margin: 12px;
+
+}
+
+.members .third {
+    display: flex;
+    margin: 75px;
+}
+
+.members .third .card {
+    align-items: center;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    margin: 12px;
+
+}
+
+.members .last {
+    margin: 75px;
+}
+
+.members .last .card {
+    align-items: center;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    margin: 12px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer .container {
+    display: flex;
+    margin: 82px;
+    margin-bottom: 0;
+}
+
+footer .container .left {
+    width: 40%;
+    padding-right: 10px;
+    padding-top: 15px;
+}
+
+footer .container .left h1 {
+    font-size: 30px;
+}
+
+footer .container .left i {
+    font-size: 20px;
+    padding-left: 12px;
+}
+footer .container .left i:hover{
+    color: #28a745;
+    cursor: pointer;
+}
+footer .container .mid {
+    width: 30%;
+    padding-top: 15px;
+}
+
+footer .container .mid p:hover {
+    color: #28a745;
+    cursor: pointer;
+}
+
+
+footer .container .right {
+    width: 30%;
+    padding-top: 15px;
+}
+
+footer .container .right p:hover {
+    color: #28a745;
+    cursor: pointer;
+}
+@media(max-width:1084px) {
+    nav .links {
+        display: none;
+    }
+
+    nav .icon {
+        display: block !important;
+    }
+}
